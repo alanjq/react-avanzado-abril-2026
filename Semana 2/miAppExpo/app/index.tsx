@@ -1,10 +1,18 @@
-import {  View, Text, TextInput } from "react-native";
+import { StyleSheet, View } from "react-native";
+import { HelloWorldApp } from "./components/HelloWorldApp";
 
 export default function Index() {
   return (
-    <View>
-      <Text>Edit app/index.tsx to edit this screen.</Text>
-      <TextInput keyboardType="numeric" placeholder="Ingresa el texto"></TextInput>
+    <View style={styles.contenedor}>
+      <HelloWorldApp nombres={["Melitón", "Diego", "Aaron"]} />
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  contenedor: {
+    justifyContent: "center",
+    flex: 1,
+    alignItems: "center"
+  }
+})

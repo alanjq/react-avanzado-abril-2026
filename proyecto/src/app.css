@@ -1,0 +1,14 @@
+.pantalla {
+    background-color: #3A3737;
+    color: white;
+}
+.pantalla-resultado {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: right;
+    border: 1px solid gray;
+    font-family: monospace;
+    padding: .3em;
+    margin: 10px;
+    min-height: 1.2em;
+}

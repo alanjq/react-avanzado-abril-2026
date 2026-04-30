@@ -1,29 +1,29 @@
-import { useState } from 'react'
+// import { useEffect, useRef, useState } from 'react'
 import './app.css'
 import { Pantalla } from './calculadora/Pantalla'
+// import Boton from './calculadora/Boton'
 
 export function App() {
-  const [valor, setValor] = useState(0)
-
-  const sumar = (a, b) => a + b
-
-  const probar = () => {
-    let resultado = sumar(5, 3)
-    setValor(resultado)
-
-    console.log("Resultado de la suma (5+3)=", resultado)
-  }
-
-
-
+  
   return (<div>
     <h1>Calculadora</h1>
 
-    <Pantalla numero={valor} />
+    <Pantalla valor={10} />
+{/* 
+    <input type="number" ref={refText} onInput={updateTextValue} />
 
-    <button onClick={probar} type='button'>Probar funcionalidad</button>
+    {/* Botones *
 
-      {/* Botones */}
+    <section>
+      {BOTONES.map((fila, k) =>
+        <div key={k}>
+          {fila.map((boton, key) =>
+            <Boton key={key} operacion={isNaN(boton)} texto={boton}  />
+          )}
+        </div>
+      )}
+    </section> */}
+
   </div>)
 }
 
